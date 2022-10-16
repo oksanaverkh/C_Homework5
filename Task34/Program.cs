@@ -29,15 +29,17 @@ void EvenNumbersCount(int[] ar)
             count++;
         }
     }
-    Console.WriteLine($"Sum of even numbers = {count}");
+    Console.WriteLine($"Quantity of even numbers = {count}");
 }
 
 void WriteArray(int[] arr)
 {
-    for (int i = 0; i < arr.Length; i++)
+    Console.Write("[");
+    for (int i = 0; i < arr.Length-1; i++)
     {
-        Console.Write($"{arr[i]} ");
+        Console.Write($"{arr[i]}  ");
     }
+    Console.Write($"{arr[arr.Length-1]}]");
 }
 
 int[] array = GetArray(ArraySize(), 100, 1000);
